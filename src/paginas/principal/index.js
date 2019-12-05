@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./style.css"
 import aplic from '../../axios/aplic';
+import FormAddItem from '../../componentes/formAddItem.js'
 
 export default class Main extends Component {
     state = {
@@ -32,8 +33,9 @@ export default class Main extends Component {
                             </div>
                         </div>
                     ))}
+                    <FormAddItem/>
                 </div>
-            </div>
+            </div>        
         )
     }
     
